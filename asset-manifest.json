@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/the-nutrition-comparer/static/css/main.4eed3ff1.css",
+    "main.js": "/the-nutrition-comparer/static/js/main.a82812a3.js",
+    "index.html": "/the-nutrition-comparer/index.html",
+    "main.4eed3ff1.css.map": "/the-nutrition-comparer/static/css/main.4eed3ff1.css.map",
+    "main.a82812a3.js.map": "/the-nutrition-comparer/static/js/main.a82812a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4eed3ff1.css",
+    "static/js/main.a82812a3.js"
+  ]
+}

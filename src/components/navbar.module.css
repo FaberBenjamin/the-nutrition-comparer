@@ -1,0 +1,111 @@
+.navbar_background {
+    background-color: rgba(27, 27, 27, 0.932);
+    color: white;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    margin-top: auto;
+    padding: 10px;
+    justify-content: end;
+}
+
+.navbar_element {
+    font-size: 25px;
+    list-style: none;
+    padding-right: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navbar_element_active {
+    cursor: pointer;
+    transition: 1s;
+    font-size: 35px;
+    list-style: none;
+    padding-right: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+.inProgress::after {
+    content: "In Progress";
+    background-color: gold;
+    border-radius: 10px;
+    color: black;
+    padding: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    transform: translateY(-15px);
+}
+
+.icons {
+    width: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.icon_desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+}
+
+.hamburger_icon {
+    width: 25px;
+}
+
+@media screen and (max-width: 600px) {
+ ul {
+    flex-direction: column;
+    display: flex;
+ }
+ .navbar_background {
+    height: auto;
+    animation: NavbarShowUp 0.5s;
+ }
+ .navbar_element {
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .navbar_element_active {
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .hamburger {
+    display: block;
+    z-index: 2;
+ }
+  }
+
+@keyframes NavbarShowUp {
+    from {
+        transform: translateY(-200px);
+    } to {
+        transform: translateY(0);
+    }
+}
